@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.app {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,134,255,1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    &__title {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        & h1 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.home,.about,.not-found {
+    width: 100%;
+    text-align: center;
+    height: 5em;
+}
+
+.blink {
+  animation: blink 1s linear 0s infinite;
+}
+
+@keyframes blink {
+  14% {
+    opacity: 0.8;
+  }
+  28% {
+    opacity: 0.6;
+  }
+  42% {
+    opacity: 0.4;
+  }
+  56% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  74% {
+    opacity: 0.6;
+  }
+  88% {
+    opacity: 0.8;
+  }
+}
+
